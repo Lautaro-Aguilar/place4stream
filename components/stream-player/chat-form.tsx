@@ -45,6 +45,7 @@ export const ChatForm = ({
       setIsDelayBlocked(true);
       setTimeout(() => {
         setIsDelayBlocked(false);
+        onSubmit();
       }, 3000);
     } else {
       onSubmit();
@@ -90,12 +91,12 @@ export const ChatForm = ({
   );
 };
 
-export const ChatFormSkeleton = () => {
+export const ChatFormSkeleton = () => (
   <div className='flex flex-col items-center gap-y-4 p-3'>
     <Skeleton className='w-full h-10' />
     <div className='flex items-center gap-x-2 ml-auto'>
       <Skeleton className='h-7 w-7' />
-      <Skeleton className='h- w-12' />
+      <Skeleton className='h-7 w-12' />
     </div>
-  </div>;
-};
+  </div>
+);
