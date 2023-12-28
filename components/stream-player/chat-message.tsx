@@ -23,6 +23,7 @@ export const ChatMessage = ({ data }: ChatMessageProps) => {
           >
             {data.from?.name}
           </span>
+          :
         </p>
         <div className='text-sm break-all'>{data.message}</div>
       </div>
