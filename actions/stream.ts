@@ -1,7 +1,7 @@
 'use server';
 
-import { revalidatePath } from 'next/cache';
 import { Stream } from '@prisma/client';
+import { revalidatePath } from 'next/cache';
 
 import { db } from '@/lib/db';
 import { getSelf } from '@/lib/auth-service';
@@ -20,6 +20,7 @@ export const updateStream = async (values: Partial<Stream>) => {
     }
 
     const validData = {
+      thumbnailUrl: values.thumbnailUrl,
       name: values.name,
       isChatEnabled: values.isChatEnabled,
       isChatFollowersOnly: values.isChatFollowersOnly,
@@ -30,12 +31,14 @@ export const updateStream = async (values: Partial<Stream>) => {
       where: {
         id: selfStream.id,
       },
-      data: { ...validData },
+      data: {
+        ...validData,
+      },
     });
 
     revalidatePath(`/u/${self.username}/chat`);
-    revalidatePath(`/u/${self.username}/`);
     revalidatePath(`/u/${self.username}`);
+    revalidatePath(`/${self.username}`);
 
     return stream;
   } catch {
