@@ -1,12 +1,12 @@
 # Place4Stream
 
-¡Bienvenido a mi proyecto! Soy Lautaro Aguilar, un apasionado desarrollador Full Stack, y estoy emocionado de presentarte uno de mis proyectos más destacados: una plataforma de transmisión en vivo desarrollada con NextJS14.
+I'm Lautaro Aguilar, a passionate Full Stack developer, and I'm thrilled to introduce you to one of my standout projects: a live streaming platform developed with Next.js 14.
 
-Creé una aplicacion web para realizar transmisiones en vivo completamente gratis y responsive, fue realizada con el framework de React Next.js 14 utilizando Tailwind junto a Radix y ShadCN para una interfaz de usuario optimizada y funcional.
+I created a web application for live streaming, completely free and responsive. It was built using the React Next.js 14 framework, employing Tailwind alongside Radix and ShadCN for an optimized and functional user interface.
 
-Este proyecto ofrece a los streamers un conjunto completo de herramientas, desde funciones avanzadas de chat hasta la capacidad de personalizar la experiencia del espectador. Con funcionalidades como bloqueo de usuarios, edición de la portada del directo y actualización de la biografía en tiempo real, proporciona una experiencia de transmisión envolvente y dinámica.
+This project provides streamers with a comprehensive set of tools, from advanced chat features to the ability to customize the viewer experience. With functionalities like user blocking, live cover editing, and real-time biography updates, it delivers an immersive and dynamic streaming experience.
 
-## Características Clave:
+## Key features:
 
 - 📡 Streaming using RTMP / WHIP protocols
 - 🌐 Generating ingress
