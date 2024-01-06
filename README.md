@@ -35,5 +35,4 @@ This project provides streamers with a comprehensive set of tools, from advanced
 - ⚡ Blazing fast application
 - 📄 SSR (Server-Side Rendering)
 - 🗺️ Grouped routes & layouts
-- 🗃️ MySQL
-- 🚀 Deployment
+- 🗃️ MongoDB
